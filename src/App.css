@@ -58,14 +58,13 @@ body {
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 8px 40px rgba(255, 140, 66, 0.2);
 }
-
 .nav-container {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 2rem;
+  padding: 0.8rem 1rem;
 }
 
 .logo-container {
@@ -666,13 +665,12 @@ body {
 .footer {
   background: linear-gradient(135deg, #C87A4E 0%, #D4905F 50%, #C8845A 100%);
   color: var(--white);
-  padding: 3rem 2rem 1.5rem;
+  padding: 3rem 1rem 1.5rem;
   text-align: center;
   box-shadow: 0 -10px 50px rgba(200, 122, 78, 0.3);
   position: relative;
   overflow: hidden;
 }
-
 .footer::before {
   content: '';
   position: absolute;
@@ -824,7 +822,29 @@ body {
   .nav-container {
     padding: 1rem 1.5rem;
   }
+.header {
+    padding: 0;
+  }
 
+  .hero {
+    margin-top: 70px;
+  }
+
+  .footer {
+    padding: 2rem 0.5rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .footer-content > div {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
   .logo-container {
     gap: 0.5rem;
   }
