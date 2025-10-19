@@ -225,38 +225,34 @@ export default function App() {
           <div className="section-header fade-in">
             <h2 className="section-title">Nos Réalisations</h2>
             <p className="section-subtitle">
-              Découvrez quelques-uns de nos projets d'aménagement paysager
+              Découvrez nos projets d'aménagement paysager en vidéo
             </p>
           </div>
 
-          <div className="services-grid">
-            {realisations.map((realisation, index) => (
-              <div key={index} className="service-card fade-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div style={{
-                  width: '100%',
-                  height: '250px',
-                  borderRadius: '18px',
-                  overflow: 'hidden',
-                  marginBottom: '1.5rem',
-                  boxShadow: '0 5px 20px rgba(255, 140, 66, 0.2)'
-                }}>
-                  <img 
-                    src={realisation.image} 
-                    alt={realisation.title}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      transition: 'transform 0.4s ease'
-                    }}
-                    onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
-                    onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                  />
-                </div>
-                <h3>{realisation.title}</h3>
-                <p>{realisation.description}</p>
-              </div>
-            ))}
+          <div className="fade-in" style={{
+            maxWidth: '1000px',
+            margin: '0 auto',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 248, 240, 0.8))',
+            backdropFilter: 'blur(15px)',
+            padding: '2rem',
+            borderRadius: '25px',
+            boxShadow: '0 15px 50px rgba(255, 140, 66, 0.25)',
+            border: '2px solid rgba(255, 179, 71, 0.3)'
+          }}>
+            <video 
+              autoPlay
+              muted
+              loop
+              controls 
+              style={{
+                width: '100%',
+                borderRadius: '18px',
+                boxShadow: '0 10px 40px rgba(255, 140, 66, 0.3)'
+              }}
+            >
+              <source src="/images/realisations/rea.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
           </div>
         </div>
       </section>
