@@ -59,32 +59,32 @@ export default function App() {
 
   const services = [
     {
-      icon: "✂️",
+      icon: "/images/elagage.png",
       title: "Taille & Élagage",
       description: "Taille professionnelle d'arbres, arbustes et haies pour un jardin harmonieux et en bonne santé."
     },
     {
-      icon: "🌿",
+      icon: "/images/tonte.png",
       title: "Entretien de Jardins",
       description: "Tonte, débroussaillage et entretien régulier de vos espaces verts toute l'année."
     },
     {
-      icon: "🌳",
+      icon: "/images/cration.png",
       title: "Création Paysagère",
       description: "Conception et aménagement de jardins sur mesure adaptés à vos envies et à votre terrain."
     },
     {
-      icon: "🌱",
+      icon: "/images/plantation.png",
       title: "Plantation",
       description: "Sélection et plantation d'arbres, arbustes, vivaces et massifs pour un jardin fleuri."
     },
     {
-      icon: "💧",
+      icon: "/images/arrosage.png",
       title: "Arrosage Automatique",
       description: "Installation de systèmes d'arrosage intelligents pour un jardin économe en eau."
     },
     {
-      icon: "🪵",
+      icon: "/images/cloture.png",
       title: "Clôtures & Terrasses",
       description: "Pose de clôtures, terrasses bois et aménagements extérieurs durables et esthétiques."
     }
@@ -176,7 +176,7 @@ export default function App() {
           <div className="services-grid">
             {services.map((service, index) => (
               <div key={index} className="service-card fade-in" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="service-icon">{service.icon}</div>
+                <img src={service.icon} alt={service.title} className="service-icon" />
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>

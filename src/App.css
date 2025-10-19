@@ -58,13 +58,14 @@ body {
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 8px 40px rgba(255, 140, 66, 0.2);
 }
+
 .nav-container {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 1rem;
+  padding: 1.2rem 2rem;
 }
 
 .logo-container {
@@ -476,16 +477,19 @@ body {
 }
 
 .service-icon {
-  font-size: 4.5rem;
-  margin-bottom: 1.5rem;
+  width: 250px;
+  height: 170px;
+  margin: 0 auto 1.5rem;
   transition: var(--transition);
   filter: drop-shadow(0 4px 10px rgba(255, 140, 66, 0.3));
   position: relative;
   z-index: 1;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .service-card:hover .service-icon {
-  transform: scale(1.2) rotate(10deg);
+  transform: scale(1.15) rotate(5deg);
   filter: drop-shadow(0 8px 20px rgba(255, 140, 66, 0.5));
 }
 
@@ -665,12 +669,13 @@ body {
 .footer {
   background: linear-gradient(135deg, #C87A4E 0%, #D4905F 50%, #C8845A 100%);
   color: var(--white);
-  padding: 3rem 1rem 1.5rem;
+  padding: 3rem 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 -10px 50px rgba(200, 122, 78, 0.3);
   position: relative;
   overflow: hidden;
 }
+
 .footer::before {
   content: '';
   position: absolute;
@@ -822,29 +827,7 @@ body {
   .nav-container {
     padding: 1rem 1.5rem;
   }
-.header {
-    padding: 0;
-  }
 
-  .hero {
-    margin-top: 70px;
-  }
-
-  .footer {
-    padding: 2rem 0.5rem 1rem;
-    overflow-x: hidden;
-  }
-
-  .footer-content > div {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .footer-bottom {
-    width: 100%;
-    overflow: hidden;
-    word-wrap: break-word;
-  }
   .logo-container {
     gap: 0.5rem;
   }
