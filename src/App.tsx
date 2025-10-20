@@ -124,23 +124,7 @@ export default function App() {
     }
   ];
    
-  const realisations = [
-    {
-      image: "/images/realisation1.png",
-      title: "Jardin Contemporain",
-      description: "Aménagement complet d'un espace extérieur avec terrasse en bois et massifs fleuris"
-    },
-    {
-      image: "/images/realisation2.png",
-      title: "Élagage Professionnel",
-      description: "Taille et mise en forme d'arbres fruitiers pour une meilleure production"
-    },
-    {
-      image: "/images/realisation3.png",
-      title: "Création Paysagère",
-      description: "Conception et réalisation d'un jardin paysager avec système d'arrosage intégré"
-    }
-  ];
+ 
 
   return (
     <div className="app">
