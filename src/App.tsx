@@ -227,6 +227,7 @@ export default function App() {
               autoPlay
               muted
               loop
+              playsInline
               controls 
               style={{
                 width: '100%',
