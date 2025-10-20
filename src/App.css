@@ -971,3 +971,37 @@ body {
     font-size: 1rem;
   }
 }
+
+/* ===== MOBILE LANDSCAPE (HORIZONTAL) ===== */
+@media (max-width: 968px) and (orientation: landscape) {
+  .header {
+    padding: 0;
+  }
+
+  .nav-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    height: 40px !important;
+    padding: 3px;
+  }
+
+  .logo-text h1 {
+    font-size: 0.9rem;
+  }
+
+  .logo-text p {
+    font-size: 0.65rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .btn-contact {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
