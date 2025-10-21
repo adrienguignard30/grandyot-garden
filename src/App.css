@@ -341,12 +341,13 @@ body {
   0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
   100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
 }
-
 .btn-primary {
   background: linear-gradient(135deg, #FF8C42, #FFB347, #FF6B35);
   color: var(--white);
   box-shadow: 0 8px 25px rgba(255, 140, 66, 0.4);
   font-weight: 700;
+  overflow: hidden;
+  border-radius: 50px;
 }
 
 .btn-primary:hover {
@@ -361,6 +362,8 @@ body {
   border: 2px solid var(--white);
   backdrop-filter: blur(10px);
   font-weight: 600;
+  overflow: hidden;
+  border-radius: 50px;
 }
 
 .btn-secondary:hover {
@@ -669,7 +672,7 @@ body {
 .footer {
   background: linear-gradient(135deg, #C87A4E 0%, #D4905F 50%, #C8845A 100%);
   color: var(--white);
-  padding: 3rem 2rem 1.5rem;
+  padding: 3rem 2rem max(3rem, env(safe-area-inset-bottom, 1.5rem));
   text-align: center;
   box-shadow: 0 -10px 50px rgba(200, 122, 78, 0.3);
   position: relative;
